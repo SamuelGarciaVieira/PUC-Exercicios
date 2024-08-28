@@ -1,0 +1,23 @@
+ Implemente um sistema para controle de sua biblioteca pessoal. O sistema é formado pelas classes “Livro” e
+“Biblioteca” com as características descritas abaixo:
+Classe: Livro
+o Atributos/campos: titulo (título do livro, tipo String), autores (autores do livro, tipo String) e editora (editora
+que publicou o livro, tipo String). Todos atributos privados;
+o Método construtor para inicializar os atributos;
+o Propriedades;
+Classe: Biblioteca
+o Atributos/campos: acervo (livros da biblioteca, tipo array), numLivros (número de livros inseridos na lista, tipo
+int) e MAXLIV (número máximo de livros na lista, constante do tipo int com valor 50);
+o Método para adicionar um livro no acervo. Parâmetros: titulo, autores e editora;
+o Método para adicionar um livro no acervo. Parâmetro: objeto do tipo Livro;
+o Método para retornar o livro cujo título é recebido como parâmetro. Retorna null se o livro não existir.
+Parâmetro: título do livro;
+o Método para retornar um string com os títulos de todos os livros do acervo;
+o Método para retornar o número de livros da biblioteca.
+Classe: Teste
+o Método Main para executar as seguintes ações, usando todos os métodos definidos nas classes:
+▪ Criar um objeto do tipo Biblioteca;
+▪ Adicionar quatro livros à biblioteca;
+▪ Imprimir os dados de um livro da biblioteca dado seu título, ou uma mensagem de erro se o livro não
+existir;
+▪ Imprimir a relação de todos os livros da biblioteca

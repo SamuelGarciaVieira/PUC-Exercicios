@@ -1,0 +1,14 @@
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\bin\Debug\net8.0\ex_7.exe
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\bin\Debug\net8.0\ex_7.deps.json
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\bin\Debug\net8.0\ex_7.runtimeconfig.json
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\bin\Debug\net8.0\ex_7.dll
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\bin\Debug\net8.0\ex_7.pdb
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.AssemblyInfoInputs.cache
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.AssemblyInfo.cs
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.csproj.CoreCompileInputs.cache
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.dll
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\refint\ex_7.dll
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.pdb
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ex_7.genruntimeconfig.cache
+C:\Users\samue\OneDrive\Desktop\Programas\VsStudio\Aed\Lista Nivelamento\ex_7\obj\Debug\net8.0\ref\ex_7.dll

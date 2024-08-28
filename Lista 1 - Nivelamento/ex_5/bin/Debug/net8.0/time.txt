@@ -1,0 +1,9 @@
+﻿Titulares:
+Número: 9, Nome: Jogador 9, Posição: Atacante
+Número: 2, Nome: Jogador 2, Posição: Meio-campo
+Número: 3, Nome: Jogador 3, Posição: Defensor
+Número: 4, Nome: Jogador 4, Posição: Goleiro
+
+Reservas:
+Número: 10, Nome: Jogador 10, Posição: Meio-campo
+Número: 8, Nome: Jogador 8, Posição: Goleiro

@@ -1,0 +1,52 @@
+Crie um programa com as seguintes classes:
+Classe Jogador:
+• Atributos/Campos
+o numero
+o nome
+o posicao (opções: goleiro, zagueiro, lateral, meia e atacante).
+• Métodos:
+o Método construtor
+o Propriedades
+Classe Time
+• Atributos/Campos
+o nome
+o titulares (vetor de Jogador, tamanho 11)
+o quantTitulares (representa a quantidade atual de jogadores titulares)
+o reservas (vetor de Jogador, tamanho 12)
+o quantReservas (representa a quantidade atual de jogadores reservas)
+o
+• Métodos
+o Métodos construtor: deve instanciar os vetores e também inicializar os atributos quantTitulares e
+quatReservas com zero.
+o Propriedade para o campo nome.
+o AdicionarTitular: recebe como parâmetro um objeto Jogador e deve inseri-lo no vetor titulares. Não
+deve ser permitido adicionar mais de 11 jogadores titulares. Após adicionar um jogador titular o
+atributo quantTitulares deve ser incrementado. O método deve retornar um valor booleano para
+indicar se a adição foi efetuada com sucesso, ou não.
+o AdicionarReserva: recebe como parâmetro um objeto Jogador e deve inseri-lo no vetor reservas. Não
+deve ser permitido adicionar mais de 12 jogadores reservas.Após adicionar um jogador titular o
+atributo quantReserva deve ser incrementado. O método deve retornar um valor booleano para
+indicar se a adição foi efetuada com sucesso, ou não.
+o SubstituirTitular: recebe como parâmetro o nome do jogador titular que deve ser substituído e o
+novo jogador, isto é, um objeto Jogador. O método deve retornar um valor booleano para indicar se a
+substituição foi efetuada com sucesso, ou não.
+o SubstituirReserva: recebe como parâmetro o nome do jogador reserva que deve ser substituído e o
+novo jogador, isto é, um objeto Jogador. O método deve retornar um valor booleano para indicar se a
+substituição foi efetuada com sucesso, ou não.
+o ConsultarTitular: recebe como parâmetro o nome de um jogador titular e deve retornar true, caso o
+jogador esteja no time. Caso contrário deve retornar false
+o ConsultarReserva: recebe como parâmetro o nome de um jogador reserva e deve retornar true, caso
+o jogador esteja no time. Caso contrário deve retornar false.
+o ExcluirTitular: recebe como parâmetro o nome do jogador titular que deve ser excluído do time.
+Após a exclusão não deve ser deixado nenhum espaço vazio no vetor, assim todos os jogadores que
+estiverem nas posições posteriores a posição da exclusão, devem ser deslocados uma posição para
+frente. Além disso, o atributo quantTitulares deve ser decrementado.
+o ExcluirReserva: recebe como parâmetro o nome do jogador reserva que deve ser excluído do time.
+Após a exclusão não deve ser deixado nenhum espaço vazio no vetor, assim todos os jogadores que
+estiverem nas posições posteriores a posição da exclusão, devem ser deslocados uma posição para
+frente. Além disso, o atributo quantReservas deve ser decrementado.
+o GerarArqTime: o método deve receber como parâmetro o nome de um arquivo texto. No método
+deve ser criado um arquivo com o nome passado como parâmetro. Além disso, deve ser escrito
+neste arquivo os dados de todos os jogadores (titulares e reservas) do time.
+Classe Teste
+o No método Main, instancie um time e utilize todos os métodos da classe Time.
