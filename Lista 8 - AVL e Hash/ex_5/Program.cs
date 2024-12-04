@@ -52,18 +52,36 @@ namespace ex_5
             primeiro = new Celula();
             ultimo = primeiro;
         }
+        public Celula Remover(int matricula)
+        {
+            Celula tmp = primeiro;
+            for (Celula i = primeiro.Prox; i != null; i = i.Prox)
+            {
+                if (i.Matricula == matricula)
+                {
+                    tmp.Prox = i.Prox;
+                    i.Prox = null;
+                    return i;
+                }
+
+            }
+            return null;
+        }
+
         public bool Pesquisar(int x)
         {
-            bool resp = false;
             for (Celula i = primeiro.Prox; i != null; i = i.Prox)
             {
                 if (i.Matricula == x)
                 {
-                    resp = true;
-                    i = ultimo;
+                    Console.WriteLine($"Matrícula: {i.Matricula}");
+                    Console.WriteLine($"Nome: {i.Nome}");
+                    Console.WriteLine($"Curso: {i.Curso}");
+                    Console.WriteLine("");
+                    return true;
                 }
             }
-            return resp;
+            return false;
         }
         public void InserirFim(int matricula, string nome, string curso)
         {
@@ -83,34 +101,35 @@ namespace ex_5
                 tabela[i] = new Lista();
             }
         }
-        private int FuncaoHash(Celula x)
+        private int FuncaoHash(int x)
         {
-            return x.Matricula % tabela.Length;
+            return x % tabela.Length;
         }
-        public bool Pesquisar(Celula x)
+        public bool Pesquisar(int x)
         {
-            return tabela[FuncaoHash(x.Matricula)].Pesquisar(x.Matricula);
+            return tabela[FuncaoHash(x)].Pesquisar(x);
         }
-        public void Remover(Celula x)
+        public void Remover(int x)
         {
-            if (Pesquisar(x.Matricula) == false)
+            if (Pesquisar(x) == false)
             {
                 throw new Exception("Erro ao remover!");
             }
             else
             {
-                tabela[FuncaoHash(x.Matricula)].Remover(x);
+                tabela[FuncaoHash(x)].Remover(x);
             }
         }
-        public void Inserir(Celula x)
+        public void Inserir(int matricula, string nome, string curso)
         {
-            if (Pesquisar(x.Matricula) == true)
+            if (Pesquisar(matricula) == true)
             {
                 throw new Exception("Erro ao inserir!");
             }
             else
             {
-                tabela[FuncaoHash(x.Matricula)].InserirFim(x);
+                tabela[FuncaoHash(matricula)].InserirFim(matricula, nome, curso);
+                Console.WriteLine("Cadastro inserido.");
             }
         }
     }
@@ -119,56 +138,68 @@ namespace ex_5
     {
         static void Panel()
         {
-            Console.WriteLine("1 - Cadastrar um paciente.");
-            Console.WriteLine("2 - Remover um paciente. O usuário deve informar o CPF do paciente a ser removido.");
-            Console.WriteLine("3 - Pesquisar um paciente pelo CPF. Caso conste deve-se imprimir todos os dados do paciente, senão deve-se imprimir a mensagem: Paciente não cadastrado.");
-            Console.WriteLine("4 - Mostrar o nome de todos os pacientes, usando o caminhamento central.");
-            Console.WriteLine("5 - Mostrar os CPS de todos os pacientes, usando o caminhamento pós-ordem.");
-            Console.WriteLine("6 - Mostrar os e-mails de todos os pacientes, usando o caminhamento pré-ordem.");
-            Console.WriteLine("7 - Sair");
+            Console.WriteLine("1- Inserir um estudante");
+            Console.WriteLine("2- Remover um estudante. O usuário deve informar a matrícula do estudante a ser removido");
+            Console.WriteLine("3- Pesquisar um estudante. Caso conste deve-se imprimir todos os dados do estudante, senão deve-se imprimir a mensagem: Estudante não cadastrado");
+            Console.WriteLine("4 - Sair.");
         }
         static void Main(string[] args)
         {
-            Panel();
-            System.Console.WriteLine();
-            int op;
-            while (op != 7)
+            int op = 0;
+            int matricula;
+            string nome, curso;
+            Hash hash = new Hash(101);
+            Celula celula = new Celula();
+            while (op != 4)
             {
+                Panel();
+                Console.WriteLine();
+                Console.WriteLine("Selecione uma opção:");
+                op = int.Parse(Console.ReadLine());
                 switch (op)
                 {
                     case 1:
                         {
+                            Console.WriteLine("Insira a matricula:");
+                            matricula = int.Parse(Console.ReadLine());
 
+                            Console.WriteLine("Insira seu nome:");
+                            nome = Console.ReadLine();
+
+                            Console.WriteLine("Insira seu curso:");
+                            curso = Console.ReadLine();
+
+                            hash.Inserir(matricula,nome,curso);
                             break;
                         }
                     case 2:
                         {
-
+                            Console.WriteLine("Insira uma matricula a ser removida:");
+                            matricula = int.Parse(Console.ReadLine());
+                            try
+                            {
+                                hash.Remover(matricula);
+                                Console.WriteLine("Estudante removido com sucesso!");
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine(e.Message);
+                            }
                             break;
                         }
                     case 3:
                         {
-
+                            Console.WriteLine("Insira uma matricula a ser pesquisada:");
+                            matricula = int.Parse(Console.ReadLine());
+                            
+                            if(!hash.Pesquisar(matricula)){
+                                Console.WriteLine("Estudante não cadastrado");
+                            }
                             break;
                         }
                     case 4:
                         {
-
-                            break;
-                        }
-                    case 5:
-                        {
-
-                            break;
-                        }
-                    case 6:
-                        {
-
-                            break;
-                        }
-                    case 7:
-                        {
-
+                            Console.WriteLine("Fim!");
                             break;
                         }
                 }
