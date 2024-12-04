@@ -1,0 +1,15 @@
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.AssemblyInfoInputs.cache
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.AssemblyInfo.cs
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.csproj.CoreCompileInputs.cache
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.sourcelink.json
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\bin\Debug\net8.0\ex_5.exe
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\bin\Debug\net8.0\ex_5.deps.json
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\bin\Debug\net8.0\ex_5.runtimeconfig.json
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\bin\Debug\net8.0\ex_5.dll
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\bin\Debug\net8.0\ex_5.pdb
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.dll
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\refint\ex_5.dll
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.pdb
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ex_5.genruntimeconfig.cache
+C:\Estudo\Github\Puc-Minas-Aed\Lista 8 - AVL e Hash\ex_5\obj\Debug\net8.0\ref\ex_5.dll
